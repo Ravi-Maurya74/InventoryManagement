@@ -9,3 +9,8 @@ from inventory.serializers import InventorySerializer
 class ListCreateInventoryView(generics.ListCreateAPIView):
     queryset = Inventory.objects.all()
     serializer_class = InventorySerializer
+
+
+class RetrieveUpdateDestroyInventoryView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Inventory.objects.all()
+    serializer_class = InventorySerializer
